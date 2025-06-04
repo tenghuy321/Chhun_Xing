@@ -37,16 +37,18 @@
     </div>
 
     <div class="w-full max-w-7xl mx-auto px-4 py-10">
-        <h1 class="text-gradient text-[20px] md:text-[25px] mb-6 md:mb-10 font-[600]">
+        <h1 class="text-gradient text-[20px] md:text-[25px] w-[200px] md:w-full mb-6 md:mb-10 font-[600]">
             {{ $realEstate_title->title[app()->getLocale()] }}</h1>
 
         <div class="relative">
             <div class="absolute -top-[15%] right-0 z-10 flex gap-2 p-2">
-                <button class="custom-prev bg-[#966927] p-0 text-white w-10 h-10 rounded-full flex items-center justify-center">
-                    <i class='bx bx-left-arrow' ></i>
+                <button
+                    class="custom-prev bg-[#966927] p-0 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                    <i class='bx bx-left-arrow'></i>
                 </button>
-                <button class="custom-next bg-[#966927] p-0 text-white w-10 h-10 rounded-full flex items-center justify-center">
-                    <i class='bx bx-right-arrow' ></i>
+                <button
+                    class="custom-next bg-[#966927] p-0 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                    <i class='bx bx-right-arrow'></i>
                 </button>
             </div>
 
@@ -62,8 +64,8 @@
                                     <div class="swiper-wrapper">
                                         @foreach ($images as $img)
                                             <div class="swiper-slide w-full h-full">
-                                                <img src="{{ asset($img) }}" alt="{{ $pro->name[app()->getLocale()] }}" loading="lazy"
-                                                    class="w-full h-[300px] object-cover cursor-pointer"
+                                                <img src="{{ asset($img) }}" alt="{{ $pro->name[app()->getLocale()] }}"
+                                                    loading="lazy" class="w-full h-[300px] object-cover cursor-pointer"
                                                     onclick="openLightbox('{{ asset($img) }}', '{{ $pro->name[app()->getLocale()] }}')">
                                             </div>
                                         @endforeach

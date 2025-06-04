@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-    <div class="relative w-full min-h-screen lg:h-[80vh]">
+    <div class="relative w-full h-[60vh] lg:h-[80vh]">
         <div class="p-0 absolute inset-0 w-full max-w-7xl mx-auto h-full">
             <img src="{{ asset($homepage->image) }}" alt="" class="w-full h-full object-cover">
         </div>

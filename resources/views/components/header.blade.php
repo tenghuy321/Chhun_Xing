@@ -220,17 +220,16 @@
                             class="block py-2 px-4 rounded hover:bg-gray-100">{{ $why_us_id->title[app()->getLocale()] }}</a>
                     </div>
                 </li>
-
+                <li class="w-full">
+                    <a href="{{ route('residence-project') }}"
+                        class="py-3 px-4 rounded-md block w-full text-[#1e1e1e] {{ Request::routeIs('residence-project') ? 'bg-gradient font-[600]' : '' }}">
+                        {{ __('messages.Our Services') }}
+                    </a>
+                </li>
                 <li class="w-full">
                     <a href="{{ route('real-estate-project') }}"
                         class="py-3 px-4 rounded-md block w-full text-[#1e1e1e] {{ Request::routeIs('real-estate-project') ? 'bg-gradient font-[600]' : '' }}">
                         {{ __('messages.Real Estate Project') }}
-                    </a>
-                </li>
-                <li class="w-full">
-                    <a href="{{ route('residence-project') }}"
-                        class="py-3 px-4 rounded-md block w-full text-[#1e1e1e] {{ Request::routeIs('residence-project') ? 'bg-gradient font-[600]' : '' }}">
-                        {{ __('messages.Residence') }}
                     </a>
                 </li>
                 <li class="w-full">
