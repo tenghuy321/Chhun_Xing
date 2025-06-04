@@ -5,7 +5,7 @@
             <img src="{{ asset($homepage->image) }}" alt="" class="w-full h-full object-cover">
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="1400" class="absolute inset-0 flex items-start mt-[8rem] lg:mt-0 lg:items-center justify-center px-4 text-center">
+        <div data-aos="fade-up" data-aos-duration="1400" class="absolute inset-0 flex items-center justify-center px-4 text-center">
             <div>
                 <p class="text-[18px] md:text-[20px] font-medium text-white">
                     {{ $homepage->title[app()->getLocale()] }}
