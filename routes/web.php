@@ -18,8 +18,6 @@ use App\Http\Controllers\Admin\HomePageController;
 use App\Http\Controllers\Admin\AboutListController;
 use App\Http\Controllers\Admin\AboutPageController;
 use App\Http\Controllers\Admin\CoreValueController;
-use App\Http\Controllers\Admin\EventListController;
-use App\Http\Controllers\Admin\EventPageController;
 use App\Http\Controllers\Admin\ResidenceController;
 use App\Http\Controllers\ResidenceProjectController;
 use App\Http\Controllers\Admin\CertificateController;
@@ -40,6 +38,7 @@ Route::get('/real-estate-project', [RealEstateProjectController::class, 'index']
 Route::get('/residence-project', [ResidenceProjectController::class, 'index'])->name('residence-project');
 Route::get('/residence-project/{id}', [ResidenceDetailController::class, 'show'])->name('more_details');
 Route::get('/contact-us', [ContactUsController::class, 'index'])->name('contact-us');
+
 Route::get('/dashboard', [AdminController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/lang/{locale}', [LanguageController::class, 'switch'])->name('lang.switch');
 
@@ -90,10 +89,10 @@ Route::middleware('auth')->group(function () {
     // mission
     Route::resource('mission_page', MissionController::class)->except(['destroy', 'show']);
 
-    // Our Team
-    Route::resource('our_team', OurTeamController::class)->except(['destroy', 'show']);
-    Route::post('/our_team/reorder', [OurTeamController::class, 'reorder'])->name('our_team.reorder');
-    Route::get('our_team/delete/{id}', [OurTeamController::class, 'delete'])->name('our_team.delete');
+    // // Our Team
+    // Route::resource('our_team', OurTeamController::class)->except(['destroy', 'show']);
+    // Route::post('/our_team/reorder', [OurTeamController::class, 'reorder'])->name('our_team.reorder');
+    // Route::get('our_team/delete/{id}', [OurTeamController::class, 'delete'])->name('our_team.delete');
 
     // core value
     Route::resource('core_value', CoreValueController::class)->except(['destroy', 'show']);
