@@ -49,7 +49,7 @@
                                     @foreach ($images as $img)
                                         @if (!empty($img))
                                             <img src="{{ asset($img) }}" alt="" loading="lazy"
-                                                class="w-full h-[200px] object-cover object-top {{ count(array_filter($images)) === 1 ? 'col-span-2' : '' }}">
+                                                class="w-full h-[200px] object-contain object-top {{ count(array_filter($images)) === 1 ? 'col-span-2' : '' }}">
                                         @endif
                                     @endforeach
                                 </div>
@@ -63,7 +63,7 @@
                                     @foreach ($images as $img)
                                         @if (!empty($img))
                                             <img src="{{ asset($img) }}" alt="" loading="lazy"
-                                                class="w-full h-[200px] object-cover object-top {{ count(array_filter($images)) === 1 ? 'col-span-2' : '' }}">
+                                                class="w-full h-[200px] object-contain object-top {{ count(array_filter($images)) === 1 ? 'col-span-2' : '' }}">
                                         @endif
                                     @endforeach
                                 </div>

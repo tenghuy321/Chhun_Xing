@@ -48,7 +48,7 @@
             <h1 class="text-[18px] text-gradient font-[600] mb-4">Follow</h1>
 
             <div class="flex space-x-2 items-center">
-                <a href="#">
+                <a href="{{ $contact->facebook }}">
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -59,7 +59,7 @@
                             fill="white" />
                     </svg>
                 </a>
-                <a href="#">
+                <a href="{{ $contact->telegram }}">
                     <svg width="37" height="36" viewBox="0 0 37 36" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path

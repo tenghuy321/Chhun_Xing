@@ -121,7 +121,7 @@
     </div> --}}
 
     <div class="w-full max-w-7xl mx-auto px-4 py-10">
-        <h1 class="text-gradient text-[20px] md:text-[25px] font-[600] mb-10">
+        <h1 class="text-gradient text-[20px] md:text-[25px] font-[600] mb-10 max-w-[250px] md:max-w-full">
             {{ $residentialProjects->title[app()->getLocale()] }}</h1>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

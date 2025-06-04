@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <div class="w-full max-w-7xl mx-auto px-4 py-10">
+    <div id="project-reference" class="w-full max-w-7xl mx-auto px-4 py-10">
         <h1 class="text-gradient text-[20px] md:text-[25px] mb-10 font-[600] max-w-[130px] sm:max-w-full">
             {{ $projectExperince_title->title[app()->getLocale()] }}</h1>
 
